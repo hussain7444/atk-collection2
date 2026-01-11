@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATK COLLECTION | Premium Scrunchies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>ATK COLLECTION</h1>
+    <p>Soft • Premium • Handcrafted</p>
+</header>
+
+<div class="container">
+    <h2 class="section-title">THE PREMIUM COLLECTION</h2>
+    <div class="gallery-grid">
+        
+        <div class="product-card">
+            <img src="Normal1.jpeg" alt="Premium Silk Scrunchie">
+            <div class="product-details">
+                <div class="product-name">Premium Silk Scrunchie</div>
+                <div class="price">₹49</div>
+                <div class="qty-wrapper">
+                    <button class="qty-btn" onclick="changeQty('qty1', -1)">-</button>
+                    <input type="number" id="qty1" class="qty-input" value="1" readonly>
+                    <button class="qty-btn" onclick="changeQty('qty1', 1)">+</button>
+                </div>
+                <button class="select-btn" onclick="selectItem('Premium Silk Scrunchie', 49, 'qty1')">Order Now</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="Tulip5.jpeg" alt="Korean Tulip Scrunchies">
+            <div class="product-details">
+                <div class="product-name">Korean Tulip Scrunchies</div>
+                <div class="price">₹89</div>
+                <div class="qty-wrapper">
+                    <button class="qty-btn" onclick="changeQty('qty2', -1)">-</button>
+                    <input type="number" id="qty2" class="qty-input" value="1" readonly>
+                    <button class="qty-btn" onclick="changeQty('qty2', 1)">+</button>
+                </div>
+                <button class="select-btn" onclick="selectItem('Korean Tulip Scrunchies', 89, 'qty2')">Order Now</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="Normal7.jpeg" alt="Combo of 4 Ultra Soft">
+            <div class="product-details">
+                <div class="product-name">Combo of 4 (Ultra Soft)</div>
+                <div class="price">₹159</div>
+                <div class="qty-wrapper">
+                    <button class="qty-btn" onclick="changeQty('qty3', -1)">-</button>
+                    <input type="number" id="qty3" class="qty-input" value="1" readonly>
+                    <button class="qty-btn" onclick="changeQty('qty3', 1)">+</button>
+                </div>
+                <button class="select-btn" onclick="selectItem('Combo of 4', 159, 'qty3')">Order Now</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="Combo4.jpeg" alt="Combo of 3 Tulip Special">
+            <div class="product-details">
+                <div class="product-name">Combo of 3 (Tulip Special)</div>
+                <div class="price">₹219</div>
+                <div class="qty-wrapper">
+                    <button class="qty-btn" onclick="changeQty('qty4', -1)">-</button>
+                    <input type="number" id="qty4" class="qty-input" value="1" readonly>
+                    <button class="qty-btn" onclick="changeQty('qty4', 1)">+</button>
+                </div>
+                <button class="select-btn" onclick="selectItem('Combo of 3', 219, 'qty4')">Order Now</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="billing-card" id="checkout">
+        <h2 style="text-align: center;">Order Summary</h2>
+        <div class="form-group">
+            <label for="selected_prod">Selected Item & Total Bill</label>
+            <input type="number" id="selected_prod" readonly placeholder="Select a product above" style="background: #eee; font-weight: bold; color: var(--premium-gold);">
+        </div>
+        <div class="form-group">
+            <label for="cust_name">Full Name</label>
+            <input type="text" id="cust_name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <label for="cust_address">Full Address</label>
+            <textarea id="cust_address" rows="3" placeholder="Pincode ke saath address likhein"></textarea>
+        </div>
+        <button class="whatsapp-btn" onclick="sendOrder()">CONFIRM ORDER ON WHATSAPP</button>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 ATK COLLECTION | Handcrafted Premium Accessories
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
